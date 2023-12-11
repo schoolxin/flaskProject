@@ -5,51 +5,93 @@
     <title>蜗牛笔记</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
     <style>
         body {
             background-color: #eee;
         }
+
         .row div {
             border: solid 1px red;
         }
-         @media (min-width: 1300px){
+
+        @media (min-width: 1300px) {
             .container {
                 max-width: 1300px;
             }
         }
-        .header
-        {
-            border-top:solid 3px black ;
+
+        .header {
+            border-top: solid 3px black;
         }
+
+        .menu {
+            border-top: solid 3px orange;
+            background: #563d7c;
+        }
+
+        .menu .menu-bar a:link, .menu .menu-bar a:visited {
+            color: white;
+        }
+
     </style>
 </head>
 <body>
-    <!-- 顶部logo 和Slogan区域 -->
-    <div class="header">
-        <div class="container" style="height:80px; border: solid 2px red">
-            <div class="row">
-                <div class="col-5" style="padding-top: 10px"><img src="/img/logo.png" style="width: 230px;"></div>
-                <div class="col-7" style="text-align: right;padding-top: 10px;"><h2>以蜗牛之名, 行学习之实</h2></div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container-fluid" style="height: 50px; border: solid 2px red"></div>
-    <div class="container">
+<!-- 顶部logo 和Slogan区域 -->
+<div class="header">
+    <div class="container" style="height:80px; border: solid 2px red">
         <div class="row">
-            <div class="col-sm-9 col-12" style="padding: 0px;border: none">
-                <div class="col-12" style="height: 200px;">轮播图</div>
-                <div class="col-12" style="height: 150px;">文章一</div>
-                <div class="col-12" style="height: 150px;">文章二</div>
+            <div class="col-5" style="padding-top: 10px"><img src="/img/logo.png" style="width: 230px;"></div>
+            <!--在sm以上的分辨率上显示  以下的不显示-->
+            <div class="col-7 d-none d-sm-block" style="text-align: right;padding-top: 10px;">
+                <h2>以蜗牛之名, 行学习之实</h2>
             </div>
-            <div class="col-sm-3 col-12" style="padding-right: 0px;border: none">
-                <div class="col-12" style="height: 50px;">搜索</div>
-                <div class="col-12" style="height: 300px;">推荐</div>
+            <div class="col-7 d-sm-none" style="text-align: right;padding-top: 10px;">
+                <h2>技术博客</h2>
             </div>
         </div>
+
     </div>
-    <div class="container-fluid" style="height: 150px; border: solid 2px red"></div>
+</div>
+<div class="menu">
+    <div class="container" style="height: 50px; border: solid 2px red">
+        <nav class="navbar navbar-expand-lg navbar-light menu-bar">
+            <a class="navbar-brand " href="#">快捷导航</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav menu-bar">
+                    <a class="nav-item nav-link" href="/type/1-1">PHP开发</a>
+                    <a class="nav-item nav-link" href="/type/2-1">Java开发</a>
+                    <a class="nav-item nav-link" href="/type/3-1">Python开发</a>
+                    <a class="nav-item nav-link" href="/type/4-1">Web前端</a>
+                    <a class="nav-item nav-link" href="/type/5-1">测试开发</a>
+                    <a class="nav-item nav-link" href="/type/6-1">数据科学</a>
+                    <a class="nav-item nav-link" href="/type/7-1">网络安全</a>
+                    <a class="nav-item nav-link" href="/type/8-1">蜗牛杂谈</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-12" style="padding: 0px;border: none">
+            <div class="col-12" style="height: 200px;">轮播图</div>
+            <div class="col-12" style="height: 150px;">文章一</div>
+            <div class="col-12" style="height: 150px;">文章二</div>
+        </div>
+        <div class="col-sm-3 col-12" style="padding-right: 0px;border: none">
+            <div class="col-12" style="height: 50px;">搜索</div>
+            <div class="col-12" style="height: 300px;">推荐</div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="height: 150px; border: solid 2px red"></div>
 
 </body>
 </html>
