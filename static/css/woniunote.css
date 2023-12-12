@@ -64,6 +64,9 @@ label {
 .article-list .detail {
     padding: 0px 10px;
 }
+.article-list .title {
+    line-height: 100px;
+}
 .article-list .detail .title {
     font-size: 22px;
     color: #e56244;
@@ -153,6 +156,7 @@ label {
 .article-detail .title {
     font-size: 24px;
     color: #e56244;
+    /*line-height: 100px;*/
 }
 .article-detail .favorite {
     text-align: right;

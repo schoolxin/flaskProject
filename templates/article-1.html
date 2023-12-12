@@ -87,7 +87,9 @@
                     阅读：74 次&nbsp;&nbsp;&nbsp;消耗积分：0 分
                 </div>
                 <div class="col-12 content">
-                    Flask是一个用Python编写的Web应用程序框架，由Armin Ronacher开发，他领导着一个名为Pocco的国际Python爱好者团队。Flask基于Werkzeug WSGI工具包和Jinja2模板引擎。能够完整地处理基于Python语言的Web应用程序，主要包括以下功能：<br/>
+                    Flask是一个用Python编写的Web应用程序框架，由Armin
+                    Ronacher开发，他领导着一个名为Pocco的国际Python爱好者团队。Flask基于Werkzeug
+                    WSGI工具包和Jinja2模板引擎。能够完整地处理基于Python语言的Web应用程序，主要包括以下功能：<br/>
                     （1）路由规则<br/>
                     （2）参数传递<br/>
                     （3）URL重定向<br/>
@@ -134,7 +136,7 @@
         <div class="col-sm-3 col-12" style="padding: 0px 10px;">
             <div class="col-12 search-bar form-group row">
                 <div class="col-8">
-                    <input type="text" class="form-control" id="keyword" placeholder="请输入关键字" />
+                    <input type="text" class="form-control" id="keyword" placeholder="请输入关键字"/>
                 </div>
                 <div class="col-4" style="text-align:right;">
                     <button type="button" class="btn btn-primary">搜索</button>
@@ -179,20 +181,20 @@
     <div class="container">
         <div class="row">
             <div class="col-4 left">
-                	<p>版权所有 &copy; 蜗牛笔记 (V-1.0)</p>
-                	<p>备案号： 蜀ICP备15014130号</p>
+                <p>版权所有 &copy; 蜗牛笔记 (V-1.0)</p>
+                <p>备案号： 蜀ICP备15014130号</p>
             </div>
             <div class="col-4 center">
-                	<p>友情链接</p>
-                	<p><a href="http://www.woniuxy.com/" target="_blank">在线课堂</a>&nbsp;&nbsp;&nbsp;
+                <p>友情链接</p>
+                <p><a href="http://www.woniuxy.com/" target="_blank">在线课堂</a>&nbsp;&nbsp;&nbsp;
                     <a href="http://www.woniuxy.com/live" target="_blank">直播课堂</a>&nbsp;&nbsp;&nbsp;
                     <a href="http://www.woniuxy.com/train/index.html" target="_blank">培训中心</a>&nbsp;&nbsp;&nbsp;
                     <a href="http://www.aduobi.com" target="_blank">UI设计学院</a>
-                	</p>
+                </p>
             </div>
             <div class="col-4 right">
-                	<p>联系我们</p>
-                	<p>成都★孵化园&nbsp;&nbsp;&nbsp;QQ/微信：15903523</p>
+                <p>联系我们</p>
+                <p>成都★孵化园&nbsp;&nbsp;&nbsp;QQ/微信：15903523</p>
             </div>
         </div>
     </div>
@@ -202,81 +204,87 @@
 <!-- data-backdrop="static" 表示用户必须要手工关闭模态框才能操作其他页面 -->
 <div class="modal fade" id="mymodal" data-backdrop="static" tabindex="-1"
      role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-    <!-- 在模态框内部配置Tab选项卡，用于切换登录和注册窗口 -->
-    <div class="tabbable" id="tabs"
-         style="background-color: #337AB7; height: 50px;padding: 5px 20px;">
-        <button type="button" class="close" data-dismiss="modal">
-            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-        </button>
-        <!-- 与登录和注册窗口的ID进行关联 -->
-        <ul class="nav nav-tabs" role="tablist">
-            <li id="login" class="nav-item active">
-                <a href="#loginpanel" data-toggle="tab" class="nav-link" style="color: midnightblue">登录</a>
-            </li>
-            <li id="reg" class="nav-item">
-                <a href="#regpanel" data-toggle="tab" class="nav-link" style="color: midnightblue">注册</a>
-            </li>
-        </ul>
-    </div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- 在模态框内部配置Tab选项卡，用于切换登录和注册窗口 -->
+            <div class="tabbable" id="tabs"
+                 style="background-color: #337AB7; height: 50px;padding: 5px 20px;">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                </button>
+                <!-- 与登录和注册窗口的ID进行关联 -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li id="login" class="nav-item active">
+                        <a href="#loginpanel" data-toggle="tab" class="nav-link" style="color: midnightblue">登录</a>
+                    </li>
+                    <li id="reg" class="nav-item">
+                        <a href="#regpanel" data-toggle="tab" class="nav-link" style="color: midnightblue">注册</a>
+                    </li>
+                </ul>
+            </div>
 
-    <!-- 绘制登录窗口 -->
-    <div class="tab-content">
-    <div class="tab-pane container active" id="loginpanel">
-    <div class="modal-content" style="margin: 20px 0px;">
-    <div class="modal-body">
-        <div class="form-group row" style="margin-top: 20px;">
-            <label for="loginname" class="col-4">&nbsp;&nbsp;登录邮箱：</label>
-            <input type="text" id="loginname" class="form-control col-7" placeholder="请输入你的邮箱地址"/>
-        </div>
-        <div class="form-group row">
-            <label for="loginpass" class="col-4">&nbsp;&nbsp;登录密码：</label>
-            <input type="password" id="loginpass" class="form-control col-7" placeholder="请输入你的登录密码"/>
-        </div>
-        <div class="form-group row">
-            <label for="logincode" class="col-4"> &nbsp;&nbsp;图片验证码：</label>
-            <input type="text" id="logincode" class="form-control col-5" placeholder="请输入右侧的验证码"/>
-            <img src="/vcode" id="loginvcode" class="col-3" style="cursor:pointer;"/>
-        </div>
-    </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-dark" data-dismiss="modal">关闭</button>
-            <button type="button" class="btn btn-primary">登录</button>
-        </div>
-    </div>
-    </div>
+            <!-- 绘制登录窗口 -->
+            <div class="tab-content">
+                <div class="tab-pane container active" id="loginpanel">
+                    <div class="modal-content" style="margin: 20px 0px;">
+                        <div class="modal-body">
+                            <div class="form-group row" style="margin-top: 20px;">
+                                <label for="loginname" class="col-4">&nbsp;&nbsp;登录邮箱：</label>
+                                <input type="text" id="loginname" class="form-control col-7"
+                                       placeholder="请输入你的邮箱地址"/>
+                            </div>
+                            <div class="form-group row">
+                                <label for="loginpass" class="col-4">&nbsp;&nbsp;登录密码：</label>
+                                <input type="password" id="loginpass" class="form-control col-7"
+                                       placeholder="请输入你的登录密码"/>
+                            </div>
+                            <div class="form-group row">
+                                <label for="logincode" class="col-4"> &nbsp;&nbsp;图片验证码：</label>
+                                <input type="text" id="logincode" class="form-control col-5"
+                                       placeholder="请输入右侧的验证码"/>
+                                <img src="/vcode" id="loginvcode" class="col-3" style="cursor:pointer;"/>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">登录</button>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- 绘制注册窗口 -->
-    <div class="tab-pane container" id="regpanel">
-    <div class="modal-content">
-    <div class="modal-content" style="margin: 20px 0px;">
-    <div class="modal-body">
-        <div class="form-group row" style="margin-top: 20px;">
-            <label for="regname" class="col-4">&nbsp;&nbsp;注册邮箱：</label>
-            <input type="text" id="regname" class="form-control col-7" placeholder="请输入你的邮箱地址"/>
+                <!-- 绘制注册窗口 -->
+                <div class="tab-pane container" id="regpanel">
+                    <div class="modal-content">
+                        <div class="modal-content" style="margin: 20px 0px;">
+                            <div class="modal-body">
+                                <div class="form-group row" style="margin-top: 20px;">
+                                    <label for="regname" class="col-4">&nbsp;&nbsp;注册邮箱：</label>
+                                    <input type="text" id="regname" class="form-control col-7"
+                                           placeholder="请输入你的邮箱地址"/>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="regpass" class="col-4">&nbsp;&nbsp;注册密码：</label>
+                                    <input type="password" id="regpass" class="form-control col-7"
+                                           placeholder="请输入你的注册密码"/>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="regmcode" class="col-4">&nbsp;&nbsp;邮箱验证码：</label>
+                                    <input type="text" id="regmcode" class="form-control col-4"
+                                           placeholder="请输入邮箱验证码"/>
+                                    <button type="button" class="btn btn-primary col-3">发送邮件</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <span>注册时请使用邮箱地址，便于找回密码。&nbsp;&nbsp;</span>
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-primary">注册</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group row">
-            <label for="regpass" class="col-4">&nbsp;&nbsp;注册密码：</label>
-            <input type="password" id="regpass" class="form-control col-7" placeholder="请输入你的注册密码"/>
-        </div>
-        <div class="form-group row">
-            <label for="regmcode" class="col-4">&nbsp;&nbsp;邮箱验证码：</label>
-            <input type="text" id="regmcode" class="form-control col-4" placeholder="请输入邮箱验证码"/>
-            <button type="button" class="btn btn-primary col-3">发送邮件</button>
-        </div>
     </div>
-    <div class="modal-footer">
-        <span>注册时请使用邮箱地址，便于找回密码。&nbsp;&nbsp;</span>
-        <button type="button" class="btn btn-dark" data-dismiss="modal">关闭</button>
-        <button type="button" class="btn btn-primary">注册</button>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-</div>
-</div>
 </div>
 
 </body>
