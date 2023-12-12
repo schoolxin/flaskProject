@@ -206,21 +206,24 @@
      role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <!-- 在模态框内部配置Tab选项卡，用于切换登录和注册窗口 -->
-            <div class="tabbable" id="tabs"
-                 style="background-color: #337AB7; height: 50px;padding: 5px 20px;">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                </button>
-                <!-- 与登录和注册窗口的ID进行关联 -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li id="login" class="nav-item active">
-                        <a href="#loginpanel" data-toggle="tab" class="nav-link" style="color: midnightblue">登录</a>
-                    </li>
-                    <li id="reg" class="nav-item">
-                        <a href="#regpanel" data-toggle="tab" class="nav-link" style="color: midnightblue">注册</a>
-                    </li>
-                </ul>
+            <div class="modal-body">
+{#                sjsjsj#}
+                <!-- 在模态框内部配置Tab选项卡，用于切换登录和注册窗口 -->
+                <div class="tabbable" id="tabs"
+                     style="background-color: #337AB7; height: 50px;padding: 5px 20px;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                    </button>
+                    <!-- 与登录和注册窗口的ID进行关联 -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li id="login" class="nav-item active">
+                            <a href="#loginpanel" data-toggle="tab" class="nav-link" style="color: midnightblue">登录</a>
+                        </li>
+                        <li id="reg" class="nav-item">
+                            <a href="#regpanel" data-toggle="tab" class="nav-link" style="color: midnightblue">注册</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <!-- 绘制登录窗口 -->
